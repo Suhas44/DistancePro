@@ -1,9 +1,39 @@
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 40px 20px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: "Arial";
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  margin: auto;
+  width: 98.5%;
+  padding: 10px;
+  margin: auto;
+  font-size: 40px;
+  font-weight: bold;
+}
+
 /* Style the navigation menu */
 .navbar {
     width: 100%;
     background-color: rgb(16, 227, 255);
     overflow: auto;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Arial";
   }
   
 
@@ -14,7 +44,7 @@
     color: #000000;
     text-decoration: none;
     font-size: 17px;
-    width: 23.4%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    width: 48.42%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center; /* If you want the text to be centered */
   }
   
@@ -26,6 +56,11 @@
   /* Style the current/active link */
   .navbar a.active {
     background-color: #1a28e7;
+  }
+
+  /* Style the current/active link */
+  .navbar a.disabled {
+    background-color: rgb(16, 227, 255);
   }
   
   /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
