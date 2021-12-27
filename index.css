@@ -1,10 +1,8 @@
-/* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 40px 20px;
 }
-
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
@@ -13,8 +11,6 @@
     url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff)
       format("woff");
 }
-
-/* Style the header links */
 .header a {
   float: left;
   color: black;
@@ -26,7 +22,6 @@
   border-radius: 4px;
   font-family: "Open Sans";
 }
-
 .header a.logo {
   margin: auto;
   width: 98.5%;
@@ -35,60 +30,44 @@
   font-size: 40px;
   font-weight: bold;
 }
-
-/* Style the navigation menu */
 .navbar {
   width: 100%;
   background-color: rgb(16, 227, 255);
   overflow: auto;
   font-family: "Open Sans";
 }
-
-/* Navigation links */
 .navbar a {
   float: left;
   padding: 12px;
   color: #000000;
   text-decoration: none;
   font-size: 17px;
-  width: 48.42%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-  text-align: center; /* If you want the text to be centered */
+  width: 48.42%;
+  text-align: center;
 }
-
-/* Add a background color on mouse-over */
 .navbar a:hover {
   background-color: #1a28e7;
 }
-
-/* Style the current/active link */
 .navbar a.active {
   background-color: #1a28e7;
 }
-
-/* Style the current/active link */
 .navbar a.disabled {
   background-color: rgb(16, 227, 255);
 }
-
-/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
 @media screen and (max-width: 500px) {
   .navbar a {
     float: none;
     display: block;
     width: 100%;
-    text-align: left; /* If you want the text to be left-aligned on small screens */
+    text-align: left;
   }
 }
-
-/*    Page Stuff     */
-
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
-
 .custom-map-control-button {
   background-color: #fff;
   border: 0;
@@ -104,17 +83,11 @@ body {
 .custom-map-control-button:hover {
   background: #ffffff;
 }
-
-/* Map */
-
 #map {
   height: 549px;
   width: 50%;
   float: left;
 }
-
-/* YOU ARE HEADER */
-
 .myDiv {
   color: rgb(255, 255, 255);
   margin: 0;
@@ -132,9 +105,6 @@ body {
   height: 89px;
   font-family: "Open Sans";
 }
-
-/* Cities */
-
 .City {
   color: rgb(0, 0, 0);
   background-color: 009900;
@@ -161,9 +131,6 @@ body {
   margin-left: 0px;
   font-family: "Open Sans";
 }
-
-/* Spacers */
-
 .Between {
   width: 50%;
   float: right;
