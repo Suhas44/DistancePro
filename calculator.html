@@ -1,60 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-    /* Set the size of the div element that contains the map */
-   #map {
-     height: 400px;
-     width: 600px;
-    }
- </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-    <script src="config.js"></script>
+    <link rel="stylesheet" href="calculator.css">
     
-
     <title>DistancePro</title>
 </head>
+
 <div class="header">
   <a href="index.html" class="logo">DistancePro</a>
 </div>
 
-<div class="navbar" id="myTopnav">
-    <a href="index.html" id = "Home" class = "disabled" onclick = myFunction(this.id)>Home</a>
-    <a href="calculator.html" id = "Calculator" class = "active" onclick= myFunction(this.id)>Calculator</a>
-  </div>
+<div class="navbar">
+    <a href="index.html" id = "Home" class = "disabled">Home</a>
+    <a href="calculator.html" id = "Calculator" class = "active">Calculator</a>
+</div>
 
-  <!--The div elements for the map and message -->
+<div>
+
   <div id="map"></div>
-  <div id="msg"></div>
-  <script>
-// Initialize and add the map
-var map;
-function initMap() {
-// The map, centered on Central Park
-const center = {lat: 40.774102, lng: -73.971734};
-const options = {zoom: 15, scaleControl: true, center: center};
-map = new google.maps.Map(
-    document.getElementById('map'), options);
-// Locations of landmarks
-const dakota = {lat: 40.7767644, lng: -73.9761399};
-const frick = {lat: 40.771209, lng: -73.9673991};
-// The markers for The Dakota and The Frick Collection
-var mk1 = new google.maps.Marker({position: dakota, map: map});
-var mk2 = new google.maps.Marker({position: frick, map: map});
-}
-  </script>
-  <!--Load the API from the specified URL -- remember to get an API KEY-- MANUAL COORDINATES MUST BE CALCULATED MATHEMATICALLY-->
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=${variableName}&callback=initMap">
-  src = `https://maps.googleapis.com/maps/api/js?key=${token}&callback=initMap`
-  </script>
-  
-    
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACj9KUNJiDPtqM0HDKRm5HvCWdp3OvZ_s&callback=initMap&v=weekly"
+    async
+  ></script>
+
+	</div>
+
+
+<div class="myDiv">
+      <h2 id="header">
+        <button class="Button" id="First" type="button">Confirm First Location</button>
+      </h2>
+      
+  <div class="Between">
+    <h2 id="between">
+      <p id="text"></p>
+    </h2>
+  </div>
+    </div>s
+
+	</div>
+
+    <script src="./calculator.js"></script>
 </body>
 </html>
-
-

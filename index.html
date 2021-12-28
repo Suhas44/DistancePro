@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-    
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="./index.js"></script>
+    
     <title>DistancePro</title>
+
 </head>
+
 <div class="header">
   <a href="index.html" class="logo">DistancePro</a>
 </div>
 
-<div class="navbar" id="myTopnav">
-    <a href="index.html" id = "Home" class = "active" onclick = myFunction(this.id)>Home</a>
-    <a href="calculator.html" id = "Calculator" class = "disabled" onclick= myFunction(this.id)>Calculator</a>
+<div class="navbar">
+  <a href="index.html" id = "Home" class = "active">Home</a>
+  <a href="calculator.html" id = "Calculator" class = "disabled">Calculator</a>
+</div>
+
+  <div id="map"></div>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACj9KUNJiDPtqM0HDKRm5HvCWdp3OvZ_s&callback=initMap&v=weekly"
+    async
+  ></script>
+  
+  <div class="myDiv">
+    <h2 id="header">You are</h2>
+  </div>
+
+  <div class="City">
+    <img class="img" src="../images/paris.jpg"/>
+    <p class="math" id="paristext">x miles from Paris<br>x km</p>
+  </div>
+
+  <div class="Between">
+    <h2 id="between"></h2>
   </div>
   
-    
+  <div class="City">
+    <img class="img" src="../images/rio.jpg"/>
+    <p class="math" id="riotext">x miles from Rio de Janeiro<br>x km</p>
+  </div>
+
+  <div class="Between">
+    <h2 id="between"></h2>
+  </div>
+
+  <div class="City">
+    <img class="img" src="../images/tokyo.jpg"/>
+    <p class="math" id="tokyotext">x miles from Tokyo<br>x km</p>
+  </div>
+
+  <div class="Between">
+    <h2 id="between"></h2>
+  </div>
+
+  <div class="City">
+    <img class="img" src="../images/newyork.jpg"/>
+    <p class="math" id="newyorktext">x miles from New York<br>x km</p>
+  </div>
+
+  <div class="Small">
+    <h2 id="small"></h2>
+  </div>
+
 </body>
 </html>
 
